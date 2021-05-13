@@ -3,6 +3,9 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Hero from './components/Hero';
 import Logo from './images/c.png'
+import Skills from './components/Skills';
+import About from './components/About';
+import Blog from './components/Blog';
 function App() {
   return (
     <>
@@ -10,6 +13,9 @@ function App() {
         <Header Logo={Logo}/>
         <Hero />
         <Content/>
+        <Skills/>
+        <About/>
+        <Blog/>
       </AppWrap>
     </>
   );

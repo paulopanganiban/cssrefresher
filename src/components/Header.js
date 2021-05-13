@@ -9,7 +9,7 @@ const Header = () => {
             <HeaderContainer>
                 <Logo src={Logoz} />
                 <HeaderLeft>
-                    <h5>John Paulo Panganiban</h5>
+                    <h3>John Paulo Panganiban</h3>
                     <h5>Front-end Developer</h5>
                 </HeaderLeft>
                 <HeaderRight>
@@ -42,9 +42,11 @@ align-items: center;
 justify-content: center;
 flex-direction: row;
 > .MuiSvgIcon-root {
+    font-size: 30px;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 20px;
+    margin-bottom: 2px;
 }
  > h5, .MenuIcon {
      cursor: pointer;
@@ -58,26 +60,11 @@ justify-content: center;
 `
 const HeaderContainer = styled.div`
 height: 125px;
-/* responsive images */
-/* img {
-	max-width: 100%;
-	height: auto;
-} */
-/**
- * By using display: flex
- * Logo and nav are in 2 cols
- * align-items make them
- * vertically centered
- * justify-content distribute
- * horizontal spaces around
- * and flex-wrap break the
- * things in two lines in
- * small screens
- */
-    display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
+min-width: 350px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
     > .title__header {
         margin: 1em 0 .5em;
     }

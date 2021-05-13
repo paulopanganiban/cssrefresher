@@ -3,39 +3,49 @@ import styled from 'styled-components'
 import img from '../images/herojpg.jpg'
 const Hero = () => {
     return (
-        <HeroWrapper>
-            <div class="hero-image">
-                <div class="hero-text">
-                    <h1>I am John Doe</h1>
-                    <p>And I'm a Photographer</p>
-                    <button>Hire me</button>
-                </div>
-            </div>
-        </HeroWrapper>
+      <HeroContainer>
+          {/* <h1>bg image</h1> */}
+          <HeroInfo>
+            <HeroName>
+                John Paulo Panganiban
+            </HeroName>
+            <HeroTitle>
+                Front-end Developer
+            </HeroTitle>
+            <HeroSubtitle>
+                I love working out and coding.
+            </HeroSubtitle>
+            <HeroLink>
+                View Projects or Read About Me
+            </HeroLink>
+          </HeroInfo>
+      </HeroContainer>
     )
 }
 
 export default Hero
+const HeroLink = styled.p`
 
-const HeroWrapper = styled.div`
-margin: 10px;
+`
+const HeroLinks = styled.div`
+
+`
+const HeroSubtitle = styled.h5``
+const HeroTitle = styled.h1`
+font-weight: 1000;
+`
+const HeroName = styled.h4`
+
+`
+const HeroInfo = styled.div`
+margin-top: auto;
+margin-right: auto;
+margin-left: 8px;
+margin-bottom: 5px;
+`
+const HeroContainer = styled.div`
 height: 500px;
-/* responsive images */
-max-width: 100%;
-height: auto;
-overflow: hidden;
-position: relative;
-background: url(${img}) no-repeat center;
-background-size: cover;
-> .hero-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
-    height: 100%;
-    width: 100%;
-}
-> .hero-image > .hero-text {
-    color: white;
-}
+display: flex;
+justify-content: center;
+border: 1px solid red;
 `

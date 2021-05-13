@@ -1,3 +1,13 @@
+export const menuItems = [
+    'Home',
+    'Projects',
+    'Skills',
+    'About',
+    'Blog',
+    'Coding Challenges',
+    'Contact'
+]
+
 export const media = {
     phone: '@media all and (max-width: 480px)',
     // target width of 480px <= width <= 768px
