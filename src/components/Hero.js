@@ -22,6 +22,7 @@ margin: 10px;
 height: 500px;
 /* responsive images */
 max-width: 100%;
+height: auto;
 overflow: hidden;
 position: relative;
 background: url(${img}) no-repeat center;

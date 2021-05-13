@@ -18,10 +18,4 @@ function App() {
 export default App;
 
 const AppWrap = styled.div`
-display: flex;
-flex-flow: column nowrap;
-justify-content: center;
-align-items: center;
-width: 100%; 
-border: 1px solid red;
 `

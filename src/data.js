@@ -1,5 +1,5 @@
 export const media = {
-    phone: '@media all and (max-width: 480px))',
+    phone: '@media all and (max-width: 480px)',
     // target width of 480px <= width <= 768px
     tablet: '@media all and (min-width: 480px) and (max-width: 768px)',
     tabletLandscape: '@media all and (min-width: 768px and (max-width: 1024px)',
