@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import { media } from '../data'
 import MenuIcon from '@material-ui/icons/Menu';
 import Logoz from '../images/c.png'
-const Header = () => {
+import Hamburger from './Hamburger';
+const Header = ({toggle}) => {
     return (
         <>
+        <Hamburger toggle={toggle}></Hamburger>
             <HeaderContainer>
                 <Logo src={Logoz} />
                 <HeaderLeft>
@@ -13,8 +15,8 @@ const Header = () => {
                     <h5>Front-end Developer</h5>
                 </HeaderLeft>
                 <HeaderRight>
-                    <h5>MENU</h5>
-                    <MenuIcon></MenuIcon>
+                    <h5 onClick={toggle}>MENU</h5>
+                    <MenuIcon onClick={toggle}></MenuIcon>
                 </HeaderRight>
             </HeaderContainer>
         </>

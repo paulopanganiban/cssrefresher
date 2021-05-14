@@ -6,19 +6,34 @@ import Logo from './images/c.png'
 import Skills from './components/Skills';
 import About from './components/About';
 import Blog from './components/Blog';
-import Sidebar from './components/Sidebar';
+import Hamburger from './components/Hamburger';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { useState } from 'react';
 function App() {
+    // toggle hamburger menu
+    const [isOpen, setIsOpen] = useState(false)
+    const toggle = () => {
+      console.log(isOpen)
+      setIsOpen(!isOpen)
+    }
   return (
     <>
-      <AppWrap>
-        <Sidebar/>
-        <Header Logo={Logo}/>
-        <Hero />
-        <Content/>
-        <Skills/>
-        <About/>
-        <Blog/>
-      </AppWrap>
+      <Router>
+        <AppWrap>
+          <Hamburger isOpen={isOpen} toggle={toggle}/>
+          <Header toggle={toggle} Logo={Logo} />
+          <Hero />
+          <Content />
+          <Skills />
+          <About />
+          <Blog />
+        </AppWrap>
+      </Router>
     </>
   );
 }
