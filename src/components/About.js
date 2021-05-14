@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 const About = () => {
     return (
-        <AboutContainer>
+        <AboutContainer id="About">
             {/* <h3>Some Heading</h3>
             <div className="boxWrap">
                 <div className="img">

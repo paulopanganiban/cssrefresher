@@ -4,7 +4,7 @@ import img from '../images/oro.png'
 import { media } from '../data'
 const Hero = () => {
     return (
-        <HeroContainer>
+        <HeroContainer id="Home">
             <HeroImage src={img}>
                 <HeroInfo>
                     <HeroName>
@@ -86,8 +86,8 @@ color: #292929;
 `
 const HeroInfo = styled.div`
 margin-top: auto;
-margin-left: 8px;
-margin-bottom: 5px;
+margin-left: 14px;
+margin-bottom: 10px;
 `
 const HeroContainer = styled.div`
 display: flex;

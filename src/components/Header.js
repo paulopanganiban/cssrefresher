@@ -4,12 +4,16 @@ import { media } from '../data'
 import MenuIcon from '@material-ui/icons/Menu';
 import Logoz from '../images/c.png'
 import Hamburger from './Hamburger';
+import {animateScroll as scroll} from 'react-scroll'
 const Header = ({toggle}) => {
     return (
         <>
+        <HeaderStickyContainer>
         <Hamburger toggle={toggle}></Hamburger>
             <HeaderContainer>
-                <Logo src={Logoz} />
+                <Logo src={Logoz} 
+                onClick={() => scroll.scrollToTop()}
+                />
                 <HeaderLeft>
                     <h3>John Paulo Panganiban</h3>
                     <h5>Front-end Developer</h5>
@@ -19,10 +23,17 @@ const Header = ({toggle}) => {
                     <MenuIcon onClick={toggle}></MenuIcon>
                 </HeaderRight>
             </HeaderContainer>
+        </HeaderStickyContainer>
+     
         </>
     )
 }
 export default Header
+const HeaderStickyContainer = styled.div`
+ position: fixed;
+  top: 0;
+  width: 100%
+`
 const Logo = styled.img`
 height: 50px;
 margin-left: 12px;
@@ -61,6 +72,7 @@ flex-direction: column;
 justify-content: center;
 `
 const HeaderContainer = styled.div`
+
 height: 125px;
 min-width: 350px;
 display: flex;

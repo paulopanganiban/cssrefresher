@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 const Blog = () => {
     return (
-        <BlogContainer>
+        <BlogContainer id="Blog">
             {/* <h3>Some Heading</h3>
             <div className="boxWrap">
                 <div className="img">
