@@ -19,8 +19,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
