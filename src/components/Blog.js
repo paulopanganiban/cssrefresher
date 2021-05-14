@@ -13,6 +13,7 @@ const Blog = () => {
                 
             </div> */}
             <h1>Blog</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quaerat autem facilis, vitae temporibus odit necessitatibus corrupti aperiam. Temporibus, maxime quae. Nisi, amet laboriosam. Beatae maiores in repellendus. Quia, vero!</p>
         </BlogContainer>
     )
 }

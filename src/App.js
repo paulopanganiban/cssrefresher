@@ -6,10 +6,12 @@ import Logo from './images/c.png'
 import Skills from './components/Skills';
 import About from './components/About';
 import Blog from './components/Blog';
+import Sidebar from './components/Sidebar';
 function App() {
   return (
     <>
       <AppWrap>
+        <Sidebar/>
         <Header Logo={Logo}/>
         <Hero />
         <Content/>

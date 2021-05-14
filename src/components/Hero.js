@@ -72,7 +72,7 @@ margin-top: auto;
 margin-right: auto;
 `
 const HeroSubtitle = styled.p`
-color: #878a8f;
+color: #292929;
 
 `
 const HeroTitle = styled.h1`
@@ -82,7 +82,7 @@ line-height: 2.25rem;
 const HeroName = styled.h6`
 font-size: 20px;
 font-weight: 100;
-color: #878a8f;
+color: #292929;
 `
 const HeroInfo = styled.div`
 margin-top: auto;
