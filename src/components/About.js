@@ -13,7 +13,7 @@ const About = () => {
                 
             </div> */}
             <h1>About</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum autem quibusdam recusandae sed saepe, quaerat nisi a excepturi eligendi cupiditate aspernatur nobis quidem est harum quis perspiciatis magnam eaque.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis pariatur quas, alias dolorum voluptates perspiciatis rem consequatur, ipsum veritatis ratione totam quasi nulla debitis, dicta voluptas officiis a optio sunt.</p>
         </AboutContainer>
     )
 }
@@ -27,6 +27,4 @@ justify-content: center;
 flex-direction:column;
 align-items: center;
 width: 100%;
-border: 1px solid yellow;
-
 `

@@ -2,17 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 const Skills = () => {
     return (
-        <SkillsContainer>
-            {/* <h3>Some Heading</h3>
-            <div className="boxWrap">
-                <div className="img">
-                    <img src={HeroImg} alt="" />
-                </div>
-                <div className="cont">
-                </div>
-                
-            </div> */}
-            <h1>skills</h1>
+        <SkillsContainer id="Skills">
+            <h1>Skills</h1>
+            
         </SkillsContainer>
     )
 }
@@ -26,6 +18,5 @@ justify-content: center;
 flex-direction:column;
 align-items: center;
 width: 100%;
-border: 1px solid pink;
 
 `

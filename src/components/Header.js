@@ -30,9 +30,10 @@ const Header = ({toggle}) => {
 }
 export default Header
 const HeaderStickyContainer = styled.div`
+background-color:white;
  position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 `
 const Logo = styled.img`
 height: 50px;
@@ -60,10 +61,21 @@ flex-direction: row;
     margin-left: 10px;
     margin-right: 20px;
     margin-bottom: 2px;
+    transition: 0.4s ease-in-out;
+:hover {
+    opacity: 0.2;
+    transition: 0.2s ease-in-out;
+}
 }
  > h5, .MenuIcon {
      cursor: pointer;
- }
+     
+transition: 0.4s ease-in-out;
+:hover {
+    opacity: 0.2;
+    transition: 0.2s ease-in-out;
+}
+}
 `
 const HeaderLeft = styled.div`
 margin-left: 20px;
@@ -72,7 +84,6 @@ flex-direction: column;
 justify-content: center;
 `
 const HeaderContainer = styled.div`
-
 height: 125px;
 min-width: 350px;
 display: flex;

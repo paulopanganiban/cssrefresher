@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import img from '../images/oro.png'
 import { media } from '../data'
-const Hero = () => {
+import { Link as LinkS} from 'react-scroll'
+const Hero = ({toggle}) => {
     return (
         <HeroContainer id="Home">
             <HeroImage src={img}>
@@ -14,17 +15,25 @@ const Hero = () => {
                         Front-end Developer and Graphic Designer
                         </HeroTitle>
                     <HeroSubtitle>
-                        I love working out and coding.
-                        Lorem ipsum dolor sit amet.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur laborum, porro nostrum ex adipisci recusandae!
+                       
 
                         </HeroSubtitle>
                         <HeroLinks>
-                        <HeroLink>
+                        <HeroLink    duration={500}
+                        smooth={true}
+                        to="Projects"
+                        spy={true}
+                        offset={-125}
+                        activeClass="active">
                             View Projects
                         </HeroLink>
                         <span>{` ` }or {` `}</span>
-                        <HeroLink>
+                        <HeroLink
+                        duration={500}
+                        smooth={true}
+                        to="About"
+                        offset={125}
+                        activeClass="active">
                             Read About Me
                         </HeroLink>
                         </HeroLinks>
@@ -37,7 +46,7 @@ const Hero = () => {
 }
 
 export default Hero
-const HeroLink = styled.a`
+const HeroLink = styled(LinkS)`
 font-weight: 700;
 font-size: 18px;
 :hover {
@@ -90,6 +99,7 @@ margin-left: 14px;
 margin-bottom: 10px;
 `
 const HeroContainer = styled.div`
+margin-top: 125px;
 display: flex;
 height: 500px;
 justify-content: center;

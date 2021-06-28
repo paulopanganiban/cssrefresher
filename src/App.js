@@ -27,11 +27,11 @@ function App() {
         <AppWrap>
           <Hamburger isOpen={isOpen} toggle={toggle}/>
           <Header toggle={toggle} Logo={Logo} />
-          <Hero />
+          <Hero toggle={toggle}/>
           <Content />
-          <Skills />
+          {/* <Skills />
           <About />
-          <Blog />
+          <Blog /> */}
         </AppWrap>
       </Router>
     </>
